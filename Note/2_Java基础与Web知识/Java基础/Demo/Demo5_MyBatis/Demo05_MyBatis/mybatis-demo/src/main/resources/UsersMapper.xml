@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace：名称空间 ↓（自己任意命名）
+    resultType:返回结果类型 （最后想要包装成的类型）
+-->
+<mapper namespace="test">
+    <select id="selectAll" resultType="Users">
+        select * from tb_user;
+    </select>
+
+</mapper>
